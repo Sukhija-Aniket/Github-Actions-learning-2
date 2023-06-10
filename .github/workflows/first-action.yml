@@ -1,0 +1,20 @@
+name: First Action
+on: workflow_dispatch
+jobs:
+  firstJob:
+    runs-on: Ubuntu-latest
+    steps:
+      - name: Print Greeting
+        run: echo "Hello world!"
+      - name: Good Bye
+        run: echo "Good Bye!"
+  secondJob:
+    runs-on: macOS
+    steps:
+      - name: Print Greeting
+        run: echo "Hello world!"
+      - name: Good Bye
+        run: echo "Good Bye!"
+    
+ 
+
